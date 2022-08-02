@@ -14,7 +14,7 @@ namespace CCSANoteApp.DB.Mappings
             Map(note => note.Content);
             Map(note => note.Group);
             Map(note => note.CreatedDate);
-            Map(note => note.UpdatedDate);
+            Map(note => note.UpdatedDate); 
         }
     }
 }
