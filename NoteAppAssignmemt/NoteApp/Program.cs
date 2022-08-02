@@ -10,8 +10,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<SessionFactory>();
-builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddScoped<INoteService, NoteService>();
+builder.Services.AddTransient<IUserService, UserService>();
+builder.Services.AddTransient<INoteService, NoteService>();
 
 var app = builder.Build();
 
