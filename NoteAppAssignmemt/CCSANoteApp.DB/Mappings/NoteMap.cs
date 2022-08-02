@@ -7,6 +7,7 @@ namespace CCSANoteApp.DB.Mappings
     {
         public NoteMap()
         {
+            Table("Notes");
             Id(note => note.Id);
             Map(note => note.NoteCreator);
             Map(note => note.Title);
