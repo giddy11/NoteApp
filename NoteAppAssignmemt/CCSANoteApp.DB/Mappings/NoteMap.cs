@@ -9,10 +9,10 @@ namespace CCSANoteApp.DB.Mappings
         {
             Table("Notes");
             Id(note => note.Id);
-            Map(note => note.NoteCreator);
+            References(note => note.NoteCreator);
             Map(note => note.Title);
             Map(note => note.Content);
-            References(note => note.Group);
+            Map(note => note.Group);
             Map(note => note.CreatedDate);
             Map(note => note.UpdatedDate);
         }

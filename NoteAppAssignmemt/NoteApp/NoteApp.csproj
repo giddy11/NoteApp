@@ -11,7 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\CCSANoteApp.DB\CCSANoteApp.DB.csproj" />
+    <ProjectReference Include="..\CCSANoteApp.Domain\CCSANoteApp.Domain.csproj" />
+    <ProjectReference Include="..\CCSANoteApp.Infrastructure\CCSANoteApp.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
