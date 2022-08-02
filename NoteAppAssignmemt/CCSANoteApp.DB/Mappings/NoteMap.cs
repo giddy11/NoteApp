@@ -12,7 +12,7 @@ namespace CCSANoteApp.DB.Mappings
             References(note => note.NoteCreator);
             Map(note => note.Title);
             Map(note => note.Content);
-            Map(note => note.Group);
+            Map(note => note.Group);  
             Map(note => note.CreatedDate);
             Map(note => note.UpdatedDate); 
         }
