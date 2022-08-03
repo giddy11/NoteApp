@@ -6,6 +6,7 @@ namespace CCSANoteApp.Infrastructure.Services
     {
         void CreateNote(Note note);
         void CreateNote(User noteCreator, string title, string content, GroupName group);
+        //void CreateNote(string title, string content, GroupName group);
         void DeleteNote(Guid id);
         List<Note> GetAllNote();
         Note GetAllNoteById(Guid id);
