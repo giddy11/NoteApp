@@ -1,4 +1,6 @@
-﻿namespace CCSANoteApp.Domain
+﻿using System.Text.Json.Serialization;
+
+namespace CCSANoteApp.Domain
 {
     public class Note
     {

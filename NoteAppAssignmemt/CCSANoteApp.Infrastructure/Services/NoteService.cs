@@ -23,6 +23,7 @@ namespace CCSANoteApp.Infrastructure.Services
 
         public void CreateNote(User noteCreator, string title, string content, GroupName group)
         {
+
             notes.Add(new Note
             {
                 NoteCreator = noteCreator,
@@ -31,6 +32,8 @@ namespace CCSANoteApp.Infrastructure.Services
                 Group = group,
             });
         }
+
+
 
         public void DeleteNote(Guid id)
         {

@@ -20,7 +20,7 @@ namespace NoteApp.Controllers
         public IActionResult CreateNote([FromBody] NoteDto note)
         {
             NoteService.CreateNote(note.NoteCreator, note.Title, note.Content, note.Group);
-            return Ok("Created Successfully");
+            return Ok("Created Successfully"); 
         }
 
         [HttpDelete]
